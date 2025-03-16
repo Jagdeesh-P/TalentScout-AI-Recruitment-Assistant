@@ -11,7 +11,8 @@ from bson.objectid import ObjectId
 # MongoDB connection setup
 def get_db_connection():
     """Connect to MongoDB and return the database connection"""
-    client = MongoClient('mongodb+srv://jagdeesh:porr7214@talentscoutai.e2mx2.mongodb.net/?retryWrites=true&w=majority&appName=TalentScoutAI')  # Update with your connection string if needed
+    MONGO_URI = "mongodb+srv://jagdeesh:porr7214@talentscoutai.e2mx2.mongodb.net/?retryWrites=true&w=majority&tls=true&tlsAllowInvalidCertificates=true&appName=TalentScoutAI"
+    client = MongoClient(MONGO_URI)  # Update with your connection string if needed
     db = client['TalentScout']
     return db
 

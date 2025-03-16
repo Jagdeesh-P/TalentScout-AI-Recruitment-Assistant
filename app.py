@@ -13,7 +13,7 @@ from login import auth_flow
 
 
 # ---------------------- API Key Setup ----------------------
-API_KEY = "YOUR-API-KEY"  # Replace with your actual API key
+API_KEY = "AIzaSyCYo0tJPcY-eYPqk-WHEuvtQBBz8gWgqxM"  # Replace with your actual API key
 os.environ["GOOGLE_API_KEY"] = API_KEY
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 model = genai.GenerativeModel('gemini-2.0-flash')

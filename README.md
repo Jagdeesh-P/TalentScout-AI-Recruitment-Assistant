@@ -84,13 +84,14 @@ The chatbot formulates questions dynamically based on job roles and skills.
 
 **Example Prompt for AI Question Generation:**
 ```text
-Generate 5 technical interview questions on {technology} for a {roles} screening.
+Generate 5 technical interview questions on {technology} for a {roles} screening with {years} of experience.
 The questions should be challenging but answerable in 2-3 lines, focused on practical knowledge and real-world applications.
 ```
 
 **Example Prompt for Hiring Probability Calculation:**
 ```text
 Evaluate the candidate based on their provided responses.
+Complete data is provided
 Return only a hiring probability percentage between 0 and 100%.
 ```
 

@@ -8,9 +8,9 @@ The **Hiring Assistant Chatbot** (TalentScout AI) is an AI-powered virtual inter
 - Secure user authentication (Signup/Login)
 - Dynamic technical question generation based on roles and skills
 - Real-time validation of user inputs (name, email, phone, etc.)
-- **MongoDB Atlas integration** for secure cloud-based data storage
+- **MongoDB Atlas for secured cloud storage**
 - Gauge chart visualization for hiring probability
-- **Deployed on Streamlit Cloud** for easy access
+- **Deployed on Streamlit Cloud**
 - Streamlit-based responsive UI with a professional design
 
 ---
@@ -19,30 +19,27 @@ The **Hiring Assistant Chatbot** (TalentScout AI) is an AI-powered virtual inter
 ### Prerequisites
 Ensure you have the following installed:
 - Python 3.8+
-- MongoDB Atlas account (update the URI in `data_handler.py` if necessary)
+- MongoDB Atlas (Ensure your connection URI is updated in `data_handler.py`)
 
 ### Step 1: Clone the Repository
 ```sh
- git clone https://github.com/Jagdeesh-P/TalentScout-AI-Recruitment-Assistant.git
+git clone https://github.com/Jagdeesh-P/TalentScout-AI-Recruitment-Assistant.git
 ```
 
 ### Step 2: Install Dependencies
 ```sh
- pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
-### Step 3: Run the Application Locally
+### Step 3: Run the Application
 ```sh
- streamlit run app.py
+streamlit run app.py
 ```
-
-Alternatively, access the live deployment at:
-👉 **[TalentScout AI - Streamlit App](https://talentscout-ai.streamlit.app/)**
 
 ---
 
 ## Usage Guide
-The chatbot follows a structured hiring workflow. Below is the flowchart depicting the interaction process:
+The chatbot follows a structured hiring workflow. Below is the interaction process:
 
 ```
 +----------------------+        +----------------------+        +----------------------+        +----------------------+
@@ -58,6 +55,27 @@ The chatbot follows a structured hiring workflow. Below is the flowchart depicti
 
 ---
 
+## File Structure & Explanation
+
+### 1. `app.py`
+- The main file responsible for rendering the Streamlit UI.
+- Handles chat interactions and integrates AI-generated questions.
+- Displays the hiring probability gauge chart.
+
+### 2. `login.py`
+- Manages user authentication (Signup/Login) using MongoDB Atlas.
+- Validates user credentials and securely stores them.
+
+### 3. `data_handler.py`
+- Handles database operations with MongoDB Atlas.
+- Stores user data, interview responses, and evaluation results securely.
+
+### 4. `validation.py`
+- Contains functions for validating user inputs (email, phone, etc.).
+- Implements regex-based input sanitization to prevent injection attacks.
+
+---
+
 ## Technical Details
 ### Libraries Used
 - **Streamlit**: UI framework
@@ -68,7 +86,7 @@ The chatbot follows a structured hiring workflow. Below is the flowchart depicti
 - **Python-Dotenv**: Secure API key storage
 
 ### Architecture
-The system architecture follows a modular structure:
+The system follows a modular architecture:
 
 ```
 +------------+         +------------+         +------------+         +------------+
@@ -78,7 +96,7 @@ The system architecture follows a modular structure:
 
 - **Frontend**: Streamlit UI for chat interactions
 - **Backend**: Python (handling authentication, validation, AI-driven responses)
-- **Database**: **MongoDB Atlas for secure cloud storage**
+- **Database**: MongoDB Atlas for secured cloud storage
 - **AI Model**: Gemini API for natural language processing
 
 ---
@@ -109,21 +127,34 @@ Return only a hiring probability percentage between 0 and 100%.
 **Solution:** Implemented regex-based validation and input sanitization to prevent injections.
 
 ### Challenge 3: Storing Candidate Data Securely
-**Solution:** Used **MongoDB Atlas** instead of local storage, ensuring data integrity and privacy.
+**Solution:** Used MongoDB Atlas instead of local storage, ensuring data integrity and privacy.
 
 ### Challenge 4: Maintaining UI Responsiveness
 **Solution:** Custom CSS and optimized Streamlit elements for a better user experience.
 
 ---
-## Deployment
-The chatbot is **deployed on Streamlit Cloud**, making it accessible online without any manual setup. It also leverages **MongoDB Atlas** for secure and scalable database management, ensuring data privacy and reliability.
 
-👉 **Live Demo:** [TalentScout AI - Streamlit App](https://talentscout-ai.streamlit.app/)
+## Deployment Details
+- **Live App:** *[TalentScout AI on Streamlit](https://talentscout-ai.streamlit.app/)*
+- **Database:** Hosted on **MongoDB Atlas** for secure cloud storage.
 
 ---
 
 ## Screenshots & Visuals
-*(Add UI screenshots, architecture diagrams, and chat flow images here.)*
+Below are some UI previews of the application:
+
+1. **Login/Signup Page**  
+   ![Login Page](screenshots/login.png)
+
+2. **Chatbot Interview Interface**  
+   ![Chatbot Interview](screenshots/chatbot.png)
+
+3. **Chatbot Interview Questions**  
+   ![Gauge Chart](screenshots/questions.png)
+
+4. **Final Evaluation Page**  
+   ![Final Evaluation](screenshots/evaluation.png)
+
 
 ---
 
@@ -147,4 +178,5 @@ MIT License
 
 ---
 
-*Happy Hiring!*
+*Happy Hiring!* 🚀
+

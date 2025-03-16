@@ -133,7 +133,7 @@ For any queries, contact: [jagdeeshpersonal@gmail.com]
 ---
 
 ## License
-MIT License (or specify your license)
+MIT License
 
 ---
 

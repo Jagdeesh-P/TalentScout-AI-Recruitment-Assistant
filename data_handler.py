@@ -3,7 +3,8 @@ import uuid
 from pymongo import MongoClient
 
 # MongoDB Connection Setup
-MONGO_URI = "mongodb+srv://jagdeesh:porr7214@talentscoutai.e2mx2.mongodb.net/?retryWrites=true&w=majority&appName=TalentScoutAI"# Update with actual MongoDB URI if needed
+MONGO_URI = "mongodb+srv://jagdeesh:porr7214@talentscoutai.e2mx2.mongodb.net/?retryWrites=true&w=majority&tls=true&tlsAllowInvalidCertificates=true&appName=TalentScoutAI"
+# Update with actual MongoDB URI if needed
 DB_NAME = "TalentScout"
 COLLECTION_NAME = "Candidates"
 

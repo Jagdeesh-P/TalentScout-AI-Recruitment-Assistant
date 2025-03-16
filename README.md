@@ -111,6 +111,8 @@ Return only a hiring probability percentage between 0 and 100%.
 **Solution:** Custom CSS and optimized Streamlit elements for a better user experience.
 
 ---
+## Live link: *https://talentscout-ai.streamlit.app/*
+---
 
 ## Screenshots & Visuals
 *(Add UI screenshots, architecture diagrams, and chat flow images here.)*

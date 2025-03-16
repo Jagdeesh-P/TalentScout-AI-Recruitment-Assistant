@@ -1,4 +1,4 @@
-# TalentScout-AI Hiring Assistant Chatbot 
+# TalentScout-AI Hiring Assistant Chatbot
 
 ## Project Overview
 The **Hiring Assistant Chatbot** (TalentScout AI) is an AI-powered virtual interviewer designed to streamline technical hiring processes. This chatbot conducts structured interviews, evaluates candidate responses, and provides a hiring probability score based on their technical proficiency. It integrates AI-powered question generation, authentication, and database management.
@@ -8,8 +8,9 @@ The **Hiring Assistant Chatbot** (TalentScout AI) is an AI-powered virtual inter
 - Secure user authentication (Signup/Login)
 - Dynamic technical question generation based on roles and skills
 - Real-time validation of user inputs (name, email, phone, etc.)
-- MongoDB integration for storing candidate details securely
+- **MongoDB Atlas integration** for secure cloud-based data storage
 - Gauge chart visualization for hiring probability
+- **Deployed on Streamlit Cloud** for easy access
 - Streamlit-based responsive UI with a professional design
 
 ---
@@ -18,7 +19,7 @@ The **Hiring Assistant Chatbot** (TalentScout AI) is an AI-powered virtual inter
 ### Prerequisites
 Ensure you have the following installed:
 - Python 3.8+
-- MongoDB (running on `localhost:27017` or update the URI in `data_handler.py`)
+- MongoDB Atlas account (update the URI in `data_handler.py` if necessary)
 
 ### Step 1: Clone the Repository
 ```sh
@@ -30,10 +31,13 @@ Ensure you have the following installed:
  pip install -r requirements.txt
 ```
 
-### Step 3: Run the Application
+### Step 3: Run the Application Locally
 ```sh
  streamlit run app.py
 ```
+
+Alternatively, access the live deployment at:
+👉 **[TalentScout AI - Streamlit App](https://talentscout-ai.streamlit.app/)**
 
 ---
 
@@ -60,7 +64,7 @@ The chatbot follows a structured hiring workflow. Below is the flowchart depicti
 - **Streamlit-Chat**: Chat UI components
 - **Google Generative AI (Gemini-2.0-Flash)**: AI-powered interview assistant
 - **Plotly**: Data visualization (hiring probability gauge)
-- **Pymongo**: MongoDB database management
+- **Pymongo**: MongoDB Atlas database management
 - **Python-Dotenv**: Secure API key storage
 
 ### Architecture
@@ -74,7 +78,7 @@ The system architecture follows a modular structure:
 
 - **Frontend**: Streamlit UI for chat interactions
 - **Backend**: Python (handling authentication, validation, AI-driven responses)
-- **Database**: MongoDB for storing candidate data securely
+- **Database**: **MongoDB Atlas for secure cloud storage**
 - **AI Model**: Gemini API for natural language processing
 
 ---
@@ -105,13 +109,17 @@ Return only a hiring probability percentage between 0 and 100%.
 **Solution:** Implemented regex-based validation and input sanitization to prevent injections.
 
 ### Challenge 3: Storing Candidate Data Securely
-**Solution:** Used MongoDB instead of local storage, ensuring data integrity and privacy.
+**Solution:** Used **MongoDB Atlas** instead of local storage, ensuring data integrity and privacy.
 
 ### Challenge 4: Maintaining UI Responsiveness
 **Solution:** Custom CSS and optimized Streamlit elements for a better user experience.
 
 ---
-## Live link: *https://talentscout-ai.streamlit.app/*
+## Deployment
+The chatbot is **deployed on Streamlit Cloud**, making it accessible online without any manual setup. It also leverages **MongoDB Atlas** for secure and scalable database management, ensuring data privacy and reliability.
+
+👉 **Live Demo:** [TalentScout AI - Streamlit App](https://talentscout-ai.streamlit.app/)
+
 ---
 
 ## Screenshots & Visuals
@@ -140,4 +148,3 @@ MIT License
 ---
 
 *Happy Hiring!*
-

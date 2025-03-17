@@ -141,6 +141,7 @@ Return only a hiring probability percentage between 0 and 100%.
 ---
 
 ## Screenshots & Visuals
+- **Demo Video:** *[TalentScout AI Demo video](https://drive.google.com/file/d/1YtiQrkiYlVz1RnPgqEXKMCb00xRAvsD1/view?usp=sharing)*
 Below are some UI previews of the application:
 
 1. **Login/Signup Page**  
